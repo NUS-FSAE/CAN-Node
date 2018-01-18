@@ -1,0 +1,848 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F25K80 ]
+[d frameptr 4065 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"20 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"9 C:\Users\FSAE\Google Drive\18 Electronics\18 Driver Display\Software\CAN_Node.X\main.c
+[v _updateData updateData `(v  1 e 1 0 ]
+"17
+[v _time_to_send time_to_send `(v  1 e 1 0 ]
+"23
+[v _main main `(v  1 e 1 0 ]
+"54
+[v _transmit transmit `(v  1 e 1 0 ]
+"63 C:\Users\FSAE\Google Drive\18 Electronics\18 Driver Display\Software\CAN_Node.X\mcc_generated_files/ecan.c
+[v _ECAN_Initialize ECAN_Initialize `(v  1 e 1 0 ]
+"165
+[v _CAN_transmit CAN_transmit `(uc  1 e 1 0 ]
+"366
+[v _convertReg2ExtendedCANid convertReg2ExtendedCANid `(ul  1 e 4 0 ]
+"386
+[v _convertReg2StandardCANid convertReg2StandardCANid `(ul  1 e 4 0 ]
+"398
+[v _convertCANid2Reg convertCANid2Reg `(v  1 e 1 0 ]
+"51 C:\Users\FSAE\Google Drive\18 Electronics\18 Driver Display\Software\CAN_Node.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+"57
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"111 C:\Users\FSAE\Google Drive\18 Electronics\18 Driver Display\Software\CAN_Node.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"122
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"52 C:\Users\FSAE\Google Drive\18 Electronics\18 Driver Display\Software\CAN_Node.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"66 C:\Users\FSAE\Google Drive\18 Electronics\18 Driver Display\Software\CAN_Node.X\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+"95
+[v _TMR0_StartTimer TMR0_StartTimer `(v  1 e 1 0 ]
+"134
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+"154
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+"158
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+"63 C:\Users\FSAE\Google Drive\18 Electronics\18 Driver Display\Software\CAN_Node.X\mcc_generated_files/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+"95
+[v _TMR1_StartTimer TMR1_StartTimer `(v  1 e 1 0 ]
+"160
+[v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
+"176
+[v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
+"180
+[v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
+"190 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f25k80.h
+[v _BRGCON1 BRGCON1 `VEuc  1 e 1 @3651 ]
+"266
+[v _BRGCON2 BRGCON2 `VEuc  1 e 1 @3652 ]
+"351
+[v _BRGCON3 BRGCON3 `VEuc  1 e 1 @3653 ]
+"16277
+[v _RXF0SIDH RXF0SIDH `VEuc  1 e 1 @3808 ]
+"16397
+[v _RXF0SIDL RXF0SIDL `VEuc  1 e 1 @3809 ]
+"16504
+[v _RXF0EIDH RXF0EIDH `VEuc  1 e 1 @3810 ]
+"16624
+[v _RXF0EIDL RXF0EIDL `VEuc  1 e 1 @3811 ]
+"16744
+[v _RXF1SIDH RXF1SIDH `VEuc  1 e 1 @3812 ]
+"16864
+[v _RXF1SIDL RXF1SIDL `VEuc  1 e 1 @3813 ]
+"16971
+[v _RXF1EIDH RXF1EIDH `VEuc  1 e 1 @3814 ]
+"17091
+[v _RXF1EIDL RXF1EIDL `VEuc  1 e 1 @3815 ]
+"17211
+[v _RXF2SIDH RXF2SIDH `VEuc  1 e 1 @3816 ]
+"17331
+[v _RXF2SIDL RXF2SIDL `VEuc  1 e 1 @3817 ]
+"17438
+[v _RXF2EIDH RXF2EIDH `VEuc  1 e 1 @3818 ]
+"17558
+[v _RXF2EIDL RXF2EIDL `VEuc  1 e 1 @3819 ]
+"17678
+[v _RXF3SIDH RXF3SIDH `VEuc  1 e 1 @3820 ]
+"17798
+[v _RXF3SIDL RXF3SIDL `VEuc  1 e 1 @3821 ]
+"17905
+[v _RXF3EIDH RXF3EIDH `VEuc  1 e 1 @3822 ]
+"18025
+[v _RXF3EIDL RXF3EIDL `VEuc  1 e 1 @3823 ]
+"18145
+[v _RXF4SIDH RXF4SIDH `VEuc  1 e 1 @3824 ]
+"18265
+[v _RXF4SIDL RXF4SIDL `VEuc  1 e 1 @3825 ]
+"18372
+[v _RXF4EIDH RXF4EIDH `VEuc  1 e 1 @3826 ]
+"18492
+[v _RXF4EIDL RXF4EIDL `VEuc  1 e 1 @3827 ]
+"18612
+[v _RXF5SIDH RXF5SIDH `VEuc  1 e 1 @3828 ]
+"18732
+[v _RXF5SIDL RXF5SIDL `VEuc  1 e 1 @3829 ]
+"18839
+[v _RXF5EIDH RXF5EIDH `VEuc  1 e 1 @3830 ]
+"18959
+[v _RXF5EIDL RXF5EIDL `VEuc  1 e 1 @3831 ]
+"19079
+[v _RXM0SIDH RXM0SIDH `VEuc  1 e 1 @3832 ]
+"19199
+[v _RXM0SIDL RXM0SIDL `VEuc  1 e 1 @3833 ]
+"19306
+[v _RXM0EIDH RXM0EIDH `VEuc  1 e 1 @3834 ]
+"19426
+[v _RXM0EIDL RXM0EIDL `VEuc  1 e 1 @3835 ]
+"19546
+[v _RXM1SIDH RXM1SIDH `VEuc  1 e 1 @3836 ]
+"19666
+[v _RXM1SIDL RXM1SIDL `VEuc  1 e 1 @3837 ]
+"19773
+[v _RXM1EIDH RXM1EIDH `VEuc  1 e 1 @3838 ]
+"19893
+[v _RXM1EIDL RXM1EIDL `VEuc  1 e 1 @3839 ]
+[s S177 . 1 `uc 1 TXPRI 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 TXREQ 1 0 :1:3 
+`uc 1 TXERR 1 0 :1:4 
+`uc 1 TXLARB 1 0 :1:5 
+`uc 1 TXABT 1 0 :1:6 
+`uc 1 TXBIF 1 0 :1:7 
+]
+"20043
+[s S185 . 1 `uc 1 TXPRI0 1 0 :1:0 
+`uc 1 TXPRI1 1 0 :1:1 
+]
+[s S314 . 1 `uc 1 TXB2PRI0 1 0 :1:0 
+`uc 1 TXB2PRI1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 TXB2REQ 1 0 :1:3 
+`uc 1 TXB2ERR 1 0 :1:4 
+`uc 1 TXB2LARB 1 0 :1:5 
+`uc 1 TXB2ABT 1 0 :1:6 
+`uc 1 TX2IF 1 0 :1:7 
+]
+[u S323 . 1 `S177 1 . 1 0 `S185 1 . 1 0 `S314 1 . 1 0 ]
+[v _TXB2CONbits TXB2CONbits `VES323  1 e 1 @3840 ]
+"20123
+[v _TXB2SIDH TXB2SIDH `VEuc  1 e 1 @3841 ]
+"20243
+[v _TXB2SIDL TXB2SIDL `VEuc  1 e 1 @3842 ]
+"20355
+[v _TXB2EIDH TXB2EIDH `VEuc  1 e 1 @3843 ]
+"20475
+[v _TXB2EIDL TXB2EIDL `VEuc  1 e 1 @3844 ]
+"20595
+[v _TXB2DLC TXB2DLC `VEuc  1 e 1 @3845 ]
+"20681
+[v _TXB2D0 TXB2D0 `VEuc  1 e 1 @3846 ]
+"20751
+[v _TXB2D1 TXB2D1 `VEuc  1 e 1 @3847 ]
+"20821
+[v _TXB2D2 TXB2D2 `VEuc  1 e 1 @3848 ]
+"20891
+[v _TXB2D3 TXB2D3 `VEuc  1 e 1 @3849 ]
+"20961
+[v _TXB2D4 TXB2D4 `VEuc  1 e 1 @3850 ]
+"21031
+[v _TXB2D5 TXB2D5 `VEuc  1 e 1 @3851 ]
+"21101
+[v _TXB2D6 TXB2D6 `VEuc  1 e 1 @3852 ]
+"21171
+[v _TXB2D7 TXB2D7 `VEuc  1 e 1 @3853 ]
+"21474
+[s S256 . 1 `uc 1 TXB1PRI0 1 0 :1:0 
+`uc 1 TXB1PRI1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 TXB1REQ 1 0 :1:3 
+`uc 1 TXB1ERR 1 0 :1:4 
+`uc 1 TXB1LARB 1 0 :1:5 
+`uc 1 TXB1ABT 1 0 :1:6 
+`uc 1 TX1IF 1 0 :1:7 
+]
+[u S265 . 1 `S177 1 . 1 0 `S185 1 . 1 0 `S256 1 . 1 0 ]
+[v _TXB1CONbits TXB1CONbits `VES265  1 e 1 @3856 ]
+"21554
+[v _TXB1SIDH TXB1SIDH `VEuc  1 e 1 @3857 ]
+"21674
+[v _TXB1SIDL TXB1SIDL `VEuc  1 e 1 @3858 ]
+"21786
+[v _TXB1EIDH TXB1EIDH `VEuc  1 e 1 @3859 ]
+"21906
+[v _TXB1EIDL TXB1EIDL `VEuc  1 e 1 @3860 ]
+"22026
+[v _TXB1DLC TXB1DLC `VEuc  1 e 1 @3861 ]
+"22112
+[v _TXB1D0 TXB1D0 `VEuc  1 e 1 @3862 ]
+"22182
+[v _TXB1D1 TXB1D1 `VEuc  1 e 1 @3863 ]
+"22252
+[v _TXB1D2 TXB1D2 `VEuc  1 e 1 @3864 ]
+"22322
+[v _TXB1D3 TXB1D3 `VEuc  1 e 1 @3865 ]
+"22392
+[v _TXB1D4 TXB1D4 `VEuc  1 e 1 @3866 ]
+"22462
+[v _TXB1D5 TXB1D5 `VEuc  1 e 1 @3867 ]
+"22532
+[v _TXB1D6 TXB1D6 `VEuc  1 e 1 @3868 ]
+"22602
+[v _TXB1D7 TXB1D7 `VEuc  1 e 1 @3869 ]
+"22905
+[s S188 . 1 `uc 1 TXB0PRI0 1 0 :1:0 
+`uc 1 TXB0PRI1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 TXB0REQ 1 0 :1:3 
+`uc 1 TXB0ERR 1 0 :1:4 
+`uc 1 TXB0LARB 1 0 :1:5 
+`uc 1 TXB0ABT 1 0 :1:6 
+`uc 1 TX0IF 1 0 :1:7 
+]
+[u S197 . 1 `S177 1 . 1 0 `S185 1 . 1 0 `S188 1 . 1 0 ]
+[v _TXB0CONbits TXB0CONbits `VES197  1 e 1 @3872 ]
+"22985
+[v _TXB0SIDH TXB0SIDH `VEuc  1 e 1 @3873 ]
+"23105
+[v _TXB0SIDL TXB0SIDL `VEuc  1 e 1 @3874 ]
+"23217
+[v _TXB0EIDH TXB0EIDH `VEuc  1 e 1 @3875 ]
+"23337
+[v _TXB0EIDL TXB0EIDL `VEuc  1 e 1 @3876 ]
+"23457
+[v _TXB0DLC TXB0DLC `VEuc  1 e 1 @3877 ]
+"23543
+[v _TXB0D0 TXB0D0 `VEuc  1 e 1 @3878 ]
+"23613
+[v _TXB0D1 TXB0D1 `VEuc  1 e 1 @3879 ]
+"23683
+[v _TXB0D2 TXB0D2 `VEuc  1 e 1 @3880 ]
+"23753
+[v _TXB0D3 TXB0D3 `VEuc  1 e 1 @3881 ]
+"23823
+[v _TXB0D4 TXB0D4 `VEuc  1 e 1 @3882 ]
+"23893
+[v _TXB0D5 TXB0D5 `VEuc  1 e 1 @3883 ]
+"23963
+[v _TXB0D6 TXB0D6 `VEuc  1 e 1 @3884 ]
+"24033
+[v _TXB0D7 TXB0D7 `VEuc  1 e 1 @3885 ]
+[s S469 . 1 `uc 1 FILHIT0 1 0 :1:0 
+`uc 1 FILHIT1 1 0 :1:1 
+`uc 1 FILHIT2 1 0 :1:2 
+`uc 1 RXRTRRO_FILHIT3 1 0 :1:3 
+`uc 1 FILHIT4 1 0 :1:4 
+`uc 1 RXM0_RTRRO 1 0 :1:5 
+`uc 1 RXM1 1 0 :1:6 
+`uc 1 RXFUL 1 0 :1:7 
+]
+"24351
+[s S478 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 RXRTRRO 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 RXM0 1 0 :1:5 
+]
+[s S483 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 FILHIT3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 RTRRO 1 0 :1:5 
+]
+[s S488 . 1 `uc 1 RXB1FILHIT0 1 0 :1:0 
+`uc 1 RXB1FILHIT1 1 0 :1:1 
+`uc 1 RXB1FILHIT2 1 0 :1:2 
+`uc 1 RXB1FILHIT3 1 0 :1:3 
+`uc 1 RXB1FILHIT4 1 0 :1:4 
+`uc 1 RXB1M0 1 0 :1:5 
+`uc 1 RXB1M1 1 0 :1:6 
+`uc 1 RXB1FUL 1 0 :1:7 
+]
+[s S497 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 RXB1RTRR0 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 RXB1RTRRO 1 0 :1:5 
+]
+[u S502 . 1 `S469 1 . 1 0 `S478 1 . 1 0 `S483 1 . 1 0 `S488 1 . 1 0 `S497 1 . 1 0 ]
+[v _RXB1CONbits RXB1CONbits `VES502  1 e 1 @3888 ]
+"24466
+[v _RXB1SIDH RXB1SIDH `VEuc  1 e 1 @3889 ]
+"24586
+[v _RXB1SIDL RXB1SIDL `VEuc  1 e 1 @3890 ]
+"24703
+[v _RXB1EIDH RXB1EIDH `VEuc  1 e 1 @3891 ]
+"24823
+[v _RXB1EIDL RXB1EIDL `VEuc  1 e 1 @3892 ]
+"24943
+[v _RXB1DLC RXB1DLC `VEuc  1 e 1 @3893 ]
+"25057
+[v _RXB1D0 RXB1D0 `VEuc  1 e 1 @3894 ]
+"25127
+[v _RXB1D1 RXB1D1 `VEuc  1 e 1 @3895 ]
+"25197
+[v _RXB1D2 RXB1D2 `VEuc  1 e 1 @3896 ]
+"25267
+[v _RXB1D3 RXB1D3 `VEuc  1 e 1 @3897 ]
+"25337
+[v _RXB1D4 RXB1D4 `VEuc  1 e 1 @3898 ]
+"25407
+[v _RXB1D5 RXB1D5 `VEuc  1 e 1 @3899 ]
+"25477
+[v _RXB1D6 RXB1D6 `VEuc  1 e 1 @3900 ]
+"25547
+[v _RXB1D7 RXB1D7 `VEuc  1 e 1 @3901 ]
+"26858
+[v _WPUB WPUB `VEuc  1 e 1 @3931 ]
+"26920
+[v _ANCON1 ANCON1 `VEuc  1 e 1 @3932 ]
+"26972
+[v _ANCON0 ANCON0 `VEuc  1 e 1 @3933 ]
+[s S361 . 1 `uc 1 FILHIT0 1 0 :1:0 
+`uc 1 JTOFF_FILHIT1 1 0 :1:1 
+`uc 1 RB0DBEN_FILHIT2 1 0 :1:2 
+`uc 1 RXRTRRO_FILHIT3 1 0 :1:3 
+`uc 1 FILHIT4 1 0 :1:4 
+`uc 1 RXM0_RTRRO 1 0 :1:5 
+`uc 1 RXM1 1 0 :1:6 
+`uc 1 RXFUL 1 0 :1:7 
+]
+"27629
+[s S370 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 JTOFF 1 0 :1:1 
+`uc 1 RB0DBEN 1 0 :1:2 
+`uc 1 RXRTRRO 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 RTRRO 1 0 :1:5 
+]
+[s S377 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 FILHIT1 1 0 :1:1 
+`uc 1 FILHIT2 1 0 :1:2 
+`uc 1 FILHIT3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 RXM0 1 0 :1:5 
+]
+[s S384 . 1 `uc 1 RXB0FILHIT0 1 0 :1:0 
+`uc 1 RXB0FILHIT1 1 0 :1:1 
+`uc 1 RXB0FILHIT2 1 0 :1:2 
+`uc 1 RXB0FILHIT3 1 0 :1:3 
+`uc 1 RXB0FILHIT4 1 0 :1:4 
+`uc 1 RXB0M0 1 0 :1:5 
+`uc 1 RXB0M1 1 0 :1:6 
+`uc 1 RXB0FUL 1 0 :1:7 
+]
+[s S393 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 RXB0RTRR0 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 RXB0RTRRO 1 0 :1:5 
+]
+[u S398 . 1 `S361 1 . 1 0 `S370 1 . 1 0 `S377 1 . 1 0 `S384 1 . 1 0 `S393 1 . 1 0 ]
+[v _RXB0CONbits RXB0CONbits `VES398  1 e 1 @3936 ]
+"27764
+[v _RXB0SIDH RXB0SIDH `VEuc  1 e 1 @3937 ]
+"27884
+[v _RXB0SIDL RXB0SIDL `VEuc  1 e 1 @3938 ]
+"28001
+[v _RXB0EIDH RXB0EIDH `VEuc  1 e 1 @3939 ]
+"28121
+[v _RXB0EIDL RXB0EIDL `VEuc  1 e 1 @3940 ]
+"28241
+[v _RXB0DLC RXB0DLC `VEuc  1 e 1 @3941 ]
+"28355
+[v _RXB0D0 RXB0D0 `VEuc  1 e 1 @3942 ]
+"28425
+[v _RXB0D1 RXB0D1 `VEuc  1 e 1 @3943 ]
+"28495
+[v _RXB0D2 RXB0D2 `VEuc  1 e 1 @3944 ]
+"28565
+[v _RXB0D3 RXB0D3 `VEuc  1 e 1 @3945 ]
+"28635
+[v _RXB0D4 RXB0D4 `VEuc  1 e 1 @3946 ]
+"28705
+[v _RXB0D5 RXB0D5 `VEuc  1 e 1 @3947 ]
+"28775
+[v _RXB0D6 RXB0D6 `VEuc  1 e 1 @3948 ]
+"28845
+[v _RXB0D7 RXB0D7 `VEuc  1 e 1 @3949 ]
+"28915
+[v _CANSTAT CANSTAT `VEuc  1 e 1 @3950 ]
+"29026
+[v _CANCON CANCON `VEuc  1 e 1 @3951 ]
+[s S789 . 1 `uc 1 CLKSEL 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 CANCAP 1 0 :1:4 
+`uc 1 ENDRHI 1 0 :1:5 
+`uc 1 TX2EN 1 0 :1:6 
+`uc 1 TX2SRC 1 0 :1:7 
+]
+"29133
+[u S796 . 1 `S789 1 . 1 0 ]
+[v _CIOCONbits CIOCONbits `VES796  1 e 1 @3952 ]
+[s S555 . 1 `uc 1 EWARN 1 0 :1:0 
+`uc 1 RXWARN 1 0 :1:1 
+`uc 1 TXWARN 1 0 :1:2 
+`uc 1 RXBP 1 0 :1:3 
+`uc 1 TXBP 1 0 :1:4 
+`uc 1 TXBO 1 0 :1:5 
+`uc 1 RXB1OVFL 1 0 :1:6 
+`uc 1 RXB0OVFL 1 0 :1:7 
+]
+"29193
+[s S564 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_FIFOEMPTY 1 0 :1:7 
+]
+[s S567 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 nFIFOEMPTY 1 0 :1:7 
+]
+[s S570 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RXBNOVFL 1 0 :1:6 
+`uc 1 FIFOEMPTY 1 0 :1:7 
+]
+[u S574 . 1 `S555 1 . 1 0 `S564 1 . 1 0 `S567 1 . 1 0 `S570 1 . 1 0 ]
+[v _COMSTATbits COMSTATbits `VES574  1 e 1 @3953 ]
+"29258
+[v _ECANCON ECANCON `VEuc  1 e 1 @3954 ]
+[s S130 . 1 `uc 1 RXB0IE 1 0 :1:0 
+`uc 1 RXB1IE 1 0 :1:1 
+`uc 1 TXB0IE 1 0 :1:2 
+`uc 1 TXB1IE 1 0 :1:3 
+`uc 1 TXB2IE 1 0 :1:4 
+`uc 1 ERRIE 1 0 :1:5 
+`uc 1 WAKIE 1 0 :1:6 
+`uc 1 IRXIE 1 0 :1:7 
+]
+"29418
+[s S139 . 1 `uc 1 FIFOWMIE 1 0 :1:0 
+`uc 1 RXBnIE 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXBnIE 1 0 :1:4 
+]
+[u S144 . 1 `S130 1 . 1 0 `S139 1 . 1 0 ]
+[v _PIE5bits PIE5bits `VES144  1 e 1 @3958 ]
+[s S98 . 1 `uc 1 RXB0IF 1 0 :1:0 
+`uc 1 RXB1IF 1 0 :1:1 
+`uc 1 TXB0IF 1 0 :1:2 
+`uc 1 TXB1IF 1 0 :1:3 
+`uc 1 TXB2IF 1 0 :1:4 
+`uc 1 ERRIF 1 0 :1:5 
+`uc 1 WAKIF 1 0 :1:6 
+`uc 1 IRXIF 1 0 :1:7 
+]
+"29501
+[s S107 . 1 `uc 1 FIFOWMIF 1 0 :1:0 
+`uc 1 RXBnIF 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXBnIF 1 0 :1:4 
+]
+[u S112 . 1 `S98 1 . 1 0 `S107 1 . 1 0 ]
+[v _PIR5bits PIR5bits `VES112  1 e 1 @3959 ]
+"30223
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+"30325
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"30437
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+"30643
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"30700
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"30762
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"30868
+[v _REFOCON REFOCON `VEuc  1 e 1 @3994 ]
+"30933
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @3995 ]
+[s S1139 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 TMR1GIE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+]
+"31090
+[s S1147 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+]
+[u S1151 . 1 `S1139 1 . 1 0 `S1147 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES1151  1 e 1 @3997 ]
+[s S1167 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 TMR1GIF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"31161
+[s S1175 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+]
+[u S1179 . 1 `S1167 1 . 1 0 `S1175 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES1179  1 e 1 @3998 ]
+"32036
+[v _T1GCON T1GCON `VEuc  1 e 1 @4010 ]
+[s S1324 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1GGO_NOT_T1DONE 1 0 :1:3 
+]
+"32070
+[s S1327 . 1 `uc 1 T1GSS 1 0 :2:0 
+`uc 1 T1GVAL 1 0 :1:2 
+`uc 1 T1GGO_nT1DONE 1 0 :1:3 
+`uc 1 T1GSPM 1 0 :1:4 
+`uc 1 T1GTM 1 0 :1:5 
+`uc 1 T1GPOL 1 0 :1:6 
+`uc 1 TMR1GE 1 0 :1:7 
+]
+[s S1335 . 1 `uc 1 T1GSS0 1 0 :1:0 
+`uc 1 T1GSS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T1GGO 1 0 :1:3 
+]
+[s S1340 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_T1DONE 1 0 :1:3 
+]
+[s S1343 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 nT1DONE 1 0 :1:3 
+]
+[u S1346 . 1 `S1324 1 . 1 0 `S1327 1 . 1 0 `S1335 1 . 1 0 `S1340 1 . 1 0 `S1343 1 . 1 0 ]
+[v _T1GCONbits T1GCONbits `VES1346  1 e 1 @4010 ]
+"35257
+[v _T1CON T1CON `VEuc  1 e 1 @4045 ]
+[s S1276 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_T1SYNC 1 0 :1:2 
+]
+"35289
+[s S1279 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 RD16 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 SOSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1CS 1 0 :2:6 
+]
+"35289
+[s S1286 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+`uc 1 TMR1CS0 1 0 :1:6 
+`uc 1 TMR1CS1 1 0 :1:7 
+]
+"35289
+[s S1292 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 T1RD16 1 0 :1:7 
+]
+"35289
+[u S1297 . 1 `S1276 1 . 1 0 `S1279 1 . 1 0 `S1286 1 . 1 0 `S1292 1 . 1 0 ]
+"35289
+"35289
+[v _T1CONbits T1CONbits `VES1297  1 e 1 @4045 ]
+"35366
+[v _TMR1L TMR1L `VEuc  1 e 1 @4046 ]
+"35386
+[v _TMR1H TMR1H `VEuc  1 e 1 @4047 ]
+[s S1035 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+]
+"35454
+[s S1037 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_POR 1 0 :1:1 
+]
+"35454
+[s S1040 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_PD 1 0 :1:2 
+]
+"35454
+[s S1043 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_TO 1 0 :1:3 
+]
+"35454
+[s S1046 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 NOT_RI 1 0 :1:4 
+]
+"35454
+[s S1049 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_CM 1 0 :1:5 
+]
+"35454
+[s S1052 . 1 `uc 1 nBOR 1 0 :1:0 
+`uc 1 nPOR 1 0 :1:1 
+`uc 1 nPD 1 0 :1:2 
+`uc 1 nTO 1 0 :1:3 
+`uc 1 nRI 1 0 :1:4 
+`uc 1 nCM 1 0 :1:5 
+`uc 1 SBOREN 1 0 :1:6 
+`uc 1 IPEN 1 0 :1:7 
+]
+"35454
+[s S1061 . 1 `uc 1 BOR 1 0 :1:0 
+`uc 1 POR 1 0 :1:1 
+`uc 1 PD 1 0 :1:2 
+`uc 1 TO 1 0 :1:3 
+`uc 1 RI 1 0 :1:4 
+`uc 1 CM 1 0 :1:5 
+]
+"35454
+[u S1068 . 1 `S1035 1 . 1 0 `S1037 1 . 1 0 `S1040 1 . 1 0 `S1043 1 . 1 0 `S1046 1 . 1 0 `S1049 1 . 1 0 `S1052 1 . 1 0 `S1061 1 . 1 0 ]
+"35454
+"35454
+[v _RCONbits RCONbits `VES1068  1 e 1 @4048 ]
+"35619
+[v _OSCCON2 OSCCON2 `VEuc  1 e 1 @4050 ]
+"35691
+[v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
+"35768
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+[s S973 . 1 `uc 1 T0PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 T08BIT 1 0 :1:6 
+`uc 1 TMR0ON 1 0 :1:7 
+]
+"35788
+[s S980 . 1 `uc 1 T0PS0 1 0 :1:0 
+`uc 1 T0PS1 1 0 :1:1 
+`uc 1 T0PS2 1 0 :1:2 
+]
+"35788
+[u S984 . 1 `S973 1 . 1 0 `S980 1 . 1 0 ]
+"35788
+"35788
+[v _T0CONbits T0CONbits `VES984  1 e 1 @4053 ]
+"35845
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"35865
+[v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
+[s S739 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"36679
+[s S748 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"36679
+[s S757 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+"36679
+[u S761 . 1 `S739 1 . 1 0 `S748 1 . 1 0 `S757 1 . 1 0 ]
+"36679
+"36679
+[v _INTCONbits INTCONbits `VES761  1 e 1 @4082 ]
+[s S162 . 14 `uc 1 idType 1 0 `ul 1 id 4 1 `uc 1 dlc 1 5 `uc 1 data0 1 6 `uc 1 data1 1 7 `uc 1 data2 1 8 `uc 1 data3 1 9 `uc 1 data4 1 10 `uc 1 data5 1 11 `uc 1 data6 1 12 `uc 1 data7 1 13 ]
+"3 C:\Users\FSAE\Google Drive\18 Electronics\18 Driver Display\Software\CAN_Node.X\main.c
+[u S174 . 14 `S162 1 frame 14 0 `[14]uc 1 array 14 0 ]
+[v _canMessage canMessage `S174  1 e 14 0 ]
+"4
+[v _send send `uc  1 e 1 0 ]
+"5
+[v _data data `uc  1 e 1 0 ]
+"57 C:\Users\FSAE\Google Drive\18 Electronics\18 Driver Display\Software\CAN_Node.X\mcc_generated_files/tmr0.c
+[v _TMR0_InterruptHandler TMR0_InterruptHandler `*.37(v  1 e 2 0 ]
+"59
+[v _timer0ReloadVal timer0ReloadVal `VEui  1 e 2 0 ]
+"56 C:\Users\FSAE\Google Drive\18 Electronics\18 Driver Display\Software\CAN_Node.X\mcc_generated_files/tmr1.c
+[v _timer1ReloadVal timer1ReloadVal `VEui  1 e 2 0 ]
+"57
+[v _TMR1_InterruptHandler TMR1_InterruptHandler `*.37(v  1 e 2 0 ]
+"23 C:\Users\FSAE\Google Drive\18 Electronics\18 Driver Display\Software\CAN_Node.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"52
+} 0
+"54
+[v _transmit transmit `(v  1 e 1 0 ]
+{
+[v transmit@id id `ul  1 p 4 45 ]
+"67
+} 0
+"165 C:\Users\FSAE\Google Drive\18 Electronics\18 Driver Display\Software\CAN_Node.X\mcc_generated_files/ecan.c
+[v _CAN_transmit CAN_transmit `(uc  1 e 1 0 ]
+{
+"169
+[v CAN_transmit@tempSIDL tempSIDL `uc  1 a 1 44 ]
+"168
+[v CAN_transmit@tempSIDH tempSIDH `uc  1 a 1 43 ]
+"167
+[v CAN_transmit@tempEIDL tempEIDL `uc  1 a 1 42 ]
+"166
+[v CAN_transmit@tempEIDH tempEIDH `uc  1 a 1 41 ]
+"171
+[v CAN_transmit@returnValue returnValue `uc  1 a 1 40 ]
+[s S162 . 14 `uc 1 idType 1 0 `ul 1 id 4 1 `uc 1 dlc 1 5 `uc 1 data0 1 6 `uc 1 data1 1 7 `uc 1 data2 1 8 `uc 1 data3 1 9 `uc 1 data4 1 10 `uc 1 data5 1 11 `uc 1 data6 1 12 `uc 1 data7 1 13 ]
+"165
+[u S174 . 14 `S162 1 frame 14 0 `[14]uc 1 array 14 0 ]
+[v CAN_transmit@tempCanMsg tempCanMsg `*.39S174  1 p 2 38 ]
+"238
+} 0
+"398
+[v _convertCANid2Reg convertCANid2Reg `(v  1 e 1 0 ]
+{
+"399
+[v convertCANid2Reg@wipSIDL wipSIDL `uc  1 a 1 37 ]
+"398
+[v convertCANid2Reg@tempPassedInID tempPassedInID `ul  1 p 4 20 ]
+[v convertCANid2Reg@canIdType canIdType `uc  1 p 1 24 ]
+[v convertCANid2Reg@passedInEIDH passedInEIDH `*.39uc  1 p 2 25 ]
+[v convertCANid2Reg@passedInEIDL passedInEIDL `*.39uc  1 p 2 27 ]
+[v convertCANid2Reg@passedInSIDH passedInSIDH `*.39uc  1 p 2 29 ]
+[v convertCANid2Reg@passedInSIDL passedInSIDL `*.39uc  1 p 2 31 ]
+"431
+} 0
+"111 C:\Users\FSAE\Google Drive\18 Electronics\18 Driver Display\Software\CAN_Node.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"120
+} 0
+"63 C:\Users\FSAE\Google Drive\18 Electronics\18 Driver Display\Software\CAN_Node.X\mcc_generated_files/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+{
+"93
+} 0
+"95
+[v _TMR1_StartTimer TMR1_StartTimer `(v  1 e 1 0 ]
+{
+"99
+} 0
+"176
+[v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 20 ]
+"178
+} 0
+"66 C:\Users\FSAE\Google Drive\18 Electronics\18 Driver Display\Software\CAN_Node.X\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+{
+"93
+} 0
+"95
+[v _TMR0_StartTimer TMR0_StartTimer `(v  1 e 1 0 ]
+{
+"99
+} 0
+"154
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 20 ]
+"156
+} 0
+"52 C:\Users\FSAE\Google Drive\18 Electronics\18 Driver Display\Software\CAN_Node.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"84
+} 0
+"122 C:\Users\FSAE\Google Drive\18 Electronics\18 Driver Display\Software\CAN_Node.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"132
+} 0
+"51 C:\Users\FSAE\Google Drive\18 Electronics\18 Driver Display\Software\CAN_Node.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+{
+"55
+} 0
+"63 C:\Users\FSAE\Google Drive\18 Electronics\18 Driver Display\Software\CAN_Node.X\mcc_generated_files/ecan.c
+[v _ECAN_Initialize ECAN_Initialize `(v  1 e 1 0 ]
+{
+"151
+} 0
+"57 C:\Users\FSAE\Google Drive\18 Electronics\18 Driver Display\Software\CAN_Node.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"72
+} 0
+"160 C:\Users\FSAE\Google Drive\18 Electronics\18 Driver Display\Software\CAN_Node.X\mcc_generated_files/tmr1.c
+[v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
+{
+"173
+} 0
+"180
+[v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"183
+} 0
+"17 C:\Users\FSAE\Google Drive\18 Electronics\18 Driver Display\Software\CAN_Node.X\main.c
+[v _time_to_send time_to_send `(v  1 e 1 0 ]
+{
+"21
+} 0
+"134 C:\Users\FSAE\Google Drive\18 Electronics\18 Driver Display\Software\CAN_Node.X\mcc_generated_files/tmr0.c
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+{
+"151
+} 0
+"158
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"161
+} 0
+"9 C:\Users\FSAE\Google Drive\18 Electronics\18 Driver Display\Software\CAN_Node.X\main.c
+[v _updateData updateData `(v  1 e 1 0 ]
+{
+"15
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"11
+[v ___awmod@sign sign `uc  1 a 1 5 ]
+[v ___awmod@counter counter `uc  1 a 1 4 ]
+"8
+[v ___awmod@dividend dividend `i  1 p 2 0 ]
+[v ___awmod@divisor divisor `i  1 p 2 2 ]
+"35
+} 0
