@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC18 LITE Macro Assembler V1.42 build -159332390 
-                                                                                               Thu Jan 18 16:19:52 2018
+                                                                                               Thu Jan 18 21:46:13 2018
 
 Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130522
      1                           	processor	18F25K80
@@ -192,21 +192,21 @@ Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130
    178  0000                     _WPUB	set	3931
    179  0000                     _ANCON1	set	3932
    180  0000                     _ANCON0	set	3933
-   181  0000                     _T1GCONbits	set	4010
-   182  0000                     _T1CONbits	set	4045
-   183  0000                     _TMR1L	set	4046
-   184  0000                     _TMR1H	set	4047
-   185  0000                     _T1GCON	set	4010
-   186  0000                     _T1CON	set	4045
-   187  0000                     _PIR1bits	set	3998
-   188  0000                     _PIE1bits	set	3997
-   189  0000                     _RCONbits	set	4048
-   190  0000                     _T0CONbits	set	4053
-   191  0000                     _TMR0L	set	4054
-   192  0000                     _TMR0H	set	4055
-   193  0000                     _T0CON	set	4053
-   194  0000                     _CIOCONbits	set	3952
-   195  0000                     _INTCONbits	set	4082
+   181  0000                     _CIOCONbits	set	3952
+   182  0000                     _T1GCONbits	set	4010
+   183  0000                     _T1CONbits	set	4045
+   184  0000                     _TMR1L	set	4046
+   185  0000                     _TMR1H	set	4047
+   186  0000                     _T1GCON	set	4010
+   187  0000                     _T1CON	set	4045
+   188  0000                     _PIR1bits	set	3998
+   189  0000                     _PIE1bits	set	3997
+   190  0000                     _RCONbits	set	4048
+   191  0000                     _T0CONbits	set	4053
+   192  0000                     _INTCONbits	set	4082
+   193  0000                     _TMR0L	set	4054
+   194  0000                     _TMR0H	set	4055
+   195  0000                     _T0CON	set	4053
    196  0000                     _COMSTATbits	set	3953
    197  0000                     _RXB0D7	set	3949
    198  0000                     _RXB0D6	set	3948
@@ -311,7 +311,7 @@ Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130
    297                           ; 1 bytes @ 0x5
    298  000006                     	ds	1
    299  000007                     ??_INTERRUPT_InterruptManager:
-   300                           
+   300  000007                     
    301                           ; 1 bytes @ 0x6
    302  000007                     	ds	14
    303  000015                     ??_ECAN_Initialize:
@@ -485,17 +485,17 @@ Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130
    466  00067C  0E08               	movlw	high _time_to_send
    467  00067E  6E16               	movwf	TMR1_SetInterruptHandler@InterruptHandler+1,c
    468  000680  EC73  F004         	call	_TMR1_SetInterruptHandler	;wreg free
-   469  000684  D024               	goto	l1911
-   470  000686                     l1903:
+   469  000684  D024               	goto	l1923
+   470  000686                     l1915:
    471                           
    472                           ;main.c: 40: (INTCONbits.PEIE = 1);
    473  000686  8CF2               	bsf	intcon,6,c	;volatile
-   474  000688                     l1905:
+   474  000688                     l1917:
    475                           
    476                           ;main.c: 43: if(send) {
    477  000688  5033               	movf	_send,w,c
    478  00068A  B4D8               	btfsc	status,2,c
-   479  00068C  D7FD               	goto	l1905
+   479  00068C  D7FD               	goto	l1917
    480                           
    481                           ;main.c: 44: transmit(0x640);
    482  00068E  0E40               	movlw	64
@@ -533,11 +533,11 @@ Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130
    514                           ;main.c: 47: send = 0;
    515  0006CA  0E00               	movlw	0
    516  0006CC  6E33               	movwf	_send,c
-   517  0006CE                     l1911:
+   517  0006CE                     l1923:
    518                           
    519                           ;main.c: 48: (INTCONbits.GIE = 1);
    520  0006CE  8EF2               	bsf	intcon,7,c	;volatile
-   521  0006D0  D7DA               	goto	l1903
+   521  0006D0  D7DA               	goto	l1915
    522  0006D2                     __end_of_main:
    523                           	opt stack 0
    524                           tblptru	equ	0xFF8
@@ -1687,7 +1687,7 @@ Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130
   1635 ;;		line 176 in file "mcc_generated_files/tmr1.c"
   1636 ;; Parameters:    Size  Location     Type
   1637 ;;  InterruptHan    2   20[COMRAM] PTR FTN()void 
-  1638 ;;		 -> TMR1_DefaultInterruptHandler(1), time_to_send(1), 
+  1638 ;;		 -> time_to_send(1), TMR1_DefaultInterruptHandler(1), 
   1639 ;; Auto vars:     Size  Location     Type
   1640 ;;		None
   1641 ;; Return value:  Size  Location     Type
@@ -1714,8 +1714,8 @@ Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130
   1657 ;; This function calls:
   1658 ;;		Nothing
   1659 ;; This function is called by:
-  1660 ;;		_main
-  1661 ;;		_TMR1_Initialize
+  1660 ;;		_TMR1_Initialize
+  1661 ;;		_main
   1662 ;; This function uses a non-reentrant model
   1663 ;;
   1664                           
@@ -1791,12 +1791,12 @@ Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130
   1729  0007C4  0E17               	movlw	23
   1730  0007C6  6ED5               	movwf	4053,c	;volatile
   1731                           
-  1732                           ;tmr0.c: 74: TMR0H = 0xF0;
-  1733  0007C8  0EF0               	movlw	240
+  1732                           ;tmr0.c: 74: TMR0H = 0xFE;
+  1733  0007C8  0EFE               	movlw	254
   1734  0007CA  6ED7               	movwf	4055,c	;volatile
   1735                           
-  1736                           ;tmr0.c: 77: TMR0L = 0xBD;
-  1737  0007CC  0EBD               	movlw	189
+  1736                           ;tmr0.c: 77: TMR0L = 0x78;
+  1737  0007CC  0E78               	movlw	120
   1738  0007CE  6ED6               	movwf	4054,c	;volatile
   1739                           
   1740                           ;tmr0.c: 80: timer0ReloadVal = (TMR0H << 8) | TMR0L;
@@ -1901,7 +1901,7 @@ Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130
   1834 ;;		line 154 in file "mcc_generated_files/tmr0.c"
   1835 ;; Parameters:    Size  Location     Type
   1836 ;;  InterruptHan    2   20[COMRAM] PTR FTN()void 
-  1837 ;;		 -> TMR0_DefaultInterruptHandler(1), updateData(1), 
+  1837 ;;		 -> updateData(1), TMR0_DefaultInterruptHandler(1), 
   1838 ;; Auto vars:     Size  Location     Type
   1839 ;;		None
   1840 ;; Return value:  Size  Location     Type
@@ -1928,8 +1928,8 @@ Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130
   1856 ;; This function calls:
   1857 ;;		Nothing
   1858 ;; This function is called by:
-  1859 ;;		_main
-  1860 ;;		_TMR0_Initialize
+  1859 ;;		_TMR0_Initialize
+  1860 ;;		_main
   1861 ;; This function uses a non-reentrant model
   1862 ;;
   1863                           
@@ -2498,27 +2498,27 @@ Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130
   2401                           ;interrupt_manager.c: 60: if(INTCONbits.TMR0IE == 1 && INTCONbits.TMR0IF == 1)
   2402  000042  BAF2               	btfsc	intcon,5,c	;volatile
   2403  000044  A4F2               	btfss	intcon,2,c	;volatile
-  2404  000046  D003               	goto	i2l447
+  2404  000046  D003               	goto	i2l407
   2405                           
   2406                           ;interrupt_manager.c: 61: {
   2407                           ;interrupt_manager.c: 62: TMR0_ISR();
   2408  000048  EC28  F004         	call	_TMR0_ISR	;wreg free
   2409                           
   2410                           ;interrupt_manager.c: 63: }
-  2411  00004C  D006               	goto	i2l451
-  2412  00004E                     i2l447:
+  2411  00004C  D006               	goto	i2l411
+  2412  00004E                     i2l407:
   2413                           
   2414                           ;interrupt_manager.c: 64: else if(INTCONbits.PEIE == 1 && PIE1bits.TMR1IE == 1 && PIR1bi
       +                          ts.TMR1IF == 1)
   2415  00004E  BCF2               	btfsc	intcon,6,c	;volatile
   2416  000050  A09D               	btfss	3997,0,c	;volatile
-  2417  000052  D003               	goto	i2l451
+  2417  000052  D003               	goto	i2l411
   2418  000054  B09E               	btfsc	3998,0,c	;volatile
   2419                           
   2420                           ;interrupt_manager.c: 65: {
   2421                           ;interrupt_manager.c: 66: TMR1_ISR();
   2422  000056  EC13  F004         	call	_TMR1_ISR	;wreg free
-  2423  00005A                     i2l451:
+  2423  00005A                     i2l411:
   2424  00005A  C014  FFF5         	movff	??_INTERRUPT_InterruptManager+13,tablat
   2425  00005E  C013  FFF8         	movff	??_INTERRUPT_InterruptManager+12,tblptru
   2426  000062  C012  FFF7         	movff	??_INTERRUPT_InterruptManager+11,tblptrh
@@ -3342,16 +3342,16 @@ Auto Spaces:
 Pointer List with Targets:
 
     TMR1_SetInterruptHandler@InterruptHandler	PTR FTN()void  size(2) Largest target is 1
-		 -> TMR1_DefaultInterruptHandler(), time_to_send(), 
+		 -> time_to_send(), TMR1_DefaultInterruptHandler(), 
 
     TMR1_InterruptHandler	PTR FTN()void  size(2) Largest target is 1
-		 -> TMR1_DefaultInterruptHandler(), Absolute function(), time_to_send(), 
+		 -> time_to_send(), TMR1_DefaultInterruptHandler(), Absolute function(), 
 
     TMR0_SetInterruptHandler@InterruptHandler	PTR FTN()void  size(2) Largest target is 1
-		 -> TMR0_DefaultInterruptHandler(), updateData(), 
+		 -> updateData(), TMR0_DefaultInterruptHandler(), 
 
     TMR0_InterruptHandler	PTR FTN()void  size(2) Largest target is 1
-		 -> Absolute function(), TMR0_DefaultInterruptHandler(), updateData(), 
+		 -> updateData(), Absolute function(), TMR0_DefaultInterruptHandler(), 
 
     convertCANid2Reg@passedInSIDH	PTR unsigned char  size(2) Largest target is 1
 		 -> CAN_transmit@tempSIDH(COMRAM[1]), 
@@ -3679,7 +3679,7 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V1.42 build -159332390 
-Symbol Table                                                                                   Thu Jan 18 16:19:52 2018
+Symbol Table                                                                                   Thu Jan 18 21:46:13 2018
 
                 __size_of_ECAN_Initialize 00E6                               __CFG_BORV$3 000000  
                          _timer0ReloadVal 0046                              __CFG_CP0$OFF 000000  
@@ -3690,9 +3690,9 @@ Symbol Table                                                                    
                                      u395 0470                           _timer1ReloadVal 0044  
                             ___awmod@sign 0006                                       tosl 000FFD  
                                      wreg 000FE8                                      l1247 057A  
-                                    l1267 064E                                      l1911 06CE  
-                                    l1903 0686                                      l1905 0688  
-                                    l1675 04E6                                      _LATA 000F89  
+                                    l1267 064E                                      l1675 04E6  
+                                    l1923 06CE                                      l1915 0686  
+                                    l1917 0688                                      _LATA 000F89  
                                     _LATB 000F8A                                      _LATC 000F8B  
                                     _WPUB 000F5B                                      _data 0032  
                                     _main 065C              convertCANid2Reg@passedInEIDH 001A  
@@ -3711,7 +3711,7 @@ Symbol Table                                                                    
            __end_of_OSCILLATOR_Initialize 08E6                                     ?_main 0001  
                          __end_of___awmod 0742                           _TMR1_StartTimer 0904  
                                    _T0CON 000FD5                                     _T1CON 000FCD  
-                                   i2l451 005A                                     i2l447 004E  
+                                   i2l411 005A                                     i2l407 004E  
                                    _TMR0H 000FD7                                     _TMR1H 000FCF  
                                    _TMR0L 000FD6                                     _TMR1L 000FCE  
                                    _TRISA 000F92                                     _TRISB 000F93  
